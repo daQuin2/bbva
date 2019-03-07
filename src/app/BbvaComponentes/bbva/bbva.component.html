@@ -1,0 +1,372 @@
+
+ <header id="top" class="header" style="color: #000000;">
+        <div class="text-vertical-center">
+      
+            <!--<h1 style="color: #D18E11;">Technology &amp; Solutions - mPOS</h1>-->
+            
+            <nav class="navbar navbar-light bg-light">
+                  <div class="container">
+                          <h1 style="color: #000000;">WPOSS NEW 9220 </h1>
+                  </div>
+                 
+          </nav>
+            <br/>
+            <div class="text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-cogs fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/getAT</strong>
+                            </h4>
+                            <p>
+                                <strong>Método /getAT.</strong>
+                            </p>
+                            <a (click)= "getAt('#GetATModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-credit-card-alt fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/tarjeta</strong>
+                            </h4>
+                            <p>
+                                <strong>Método /tarjeta.</strong>
+                            </p>
+                            <a (click)= "URL_GET_TARJETA('#GetMethodModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-credit-card-alt fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/operador</strong>
+                            </h4>
+                            <p>
+                                <strong>Método /operador.</strong>
+                            </p>
+                            <a (click)= "URL_GET_OPERADOR('#GetMethodModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-credit-card-alt fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/operador/prefijo=1010</strong>
+                            </h4>
+                            <p>
+                                <strong>Método /operador.</strong>
+                            </p>
+                            <a (click)= "URL_GET_OPERADOR_PREFIJO('#GetMethodModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-print fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/nuevojson/impresion={{ JSONObject }}</strong>
+                            </h4>
+                            <p>
+                                <strong>Método /nuevojson/impresion={{ JSONObject }}.</strong>
+                            </p>
+                            <a (click)= "URL_GET_PRINT('#PrinterModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-key fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/Send Working Key</strong>
+                            </h4>
+                            <p>
+                                <strong>Metodo /Working Key={{ JSONObject }}.</strong>
+                            </p>
+                            <a (click)= "URL_SET_WORKINGKEY('#WorkingKeyModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-money fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/Efectivo Movil</strong>
+                            </h4>
+                            <p>
+                                <strong>Metodo /efectivo_movil.</strong>
+                            </p>
+                            <a (click)= "URL_GET_EFECTIVO_MOVIL('#EfectivoMovilModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-keyboard-o fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/Pindad</strong>
+                            </h4>
+                            <p>
+                                <strong>Metodo /pinpad.</strong>
+                            </p>
+                            <a (click)= "URL_GET_PINPAD('#PinpadModal')" class="btn btn-lg btn-success">Enviar</a>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-4 col-sm-4" style="display:inline-block">
+                        <div class="service-item">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
+                                <i class="fa fa-window-maximize fa-stack-1x text-success"></i>
+                            </span>
+                            <h4>
+                                <strong>/Test Screen</strong>
+                            </h4>
+                            <p>
+                                <strong>Test Screen.</strong>
+                            </p>
+                            <a (click)= "getScreenSize('#TestScreenModal')" class="btn btn-lg btn-success">Enviar</a>                      
+                        </div>
+                    </div>
+      
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+        </div>
+      </header>
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+              <h4>
+                  <strong>World Pos Solutions</strong>
+              </h4>
+              <p>Carrera 40 N° 24A - 77
+                  <br>Bogot&aacute;, Colombia</p>
+              <ul class="list-unstyled">
+                  <li>
+                      <i class="fa fa-phone fa-fw"></i> (57 1) 321 21 99</li>
+                  <li>
+                      <i class="fa fa-envelope-o fa-fw"></i>
+                      <a href="mailto:tysbogota@t-s.com.co ">wpossbogota@wposs.com </a>
+                  </li>
+              </ul>
+              <p class="text-muted">Copyright &copy; 2018</p>
+          </div>
+      </div>
+  </div>
+  <a id="to-top" href="#top" class="btn btn-dark btn-lg">
+      <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+  </a>
+</footer>
+
+    
+
+   <!-- MODALES  -->
+
+<div id="GetATModal" class="modal fade"  style="display: none;">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+                <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body" id="GetATBody">
+              <div style="text-align: center;">
+                  <img src="../../../assets/img/{{img}}" />
+                  <br />
+                  <br />
+                  <img id="gifGetAt" src="../../../assets/img/loading.gif" /> &nbsp;&nbsp;
+                  <p style="word-break: break-word;">{{mensaje}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="ConnectBTModal" class="modal fade" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+                <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body" id="BTBody">
+              <div style="text-align: center;">
+                  <img src="../../../assets/img/iBluetooth.png" />
+                  <br />
+                  <br />
+                  <img id="gifConnect" src="../../../assets/img/loading.gif" /> &nbsp;&nbsp;
+                  <p style="word-break: break-word;">{{mensaje}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="PrinterModal" class="modal fade" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+                <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body" id="PrinterBody">
+              <div style="text-align: center;">
+                  <img src="../../../assets/img/{{img}}" />
+                  <br />
+                  <br />
+                  <img id="gifPinter" src="../../../assets/img/loading.gif" /> &nbsp;&nbsp;
+                  <p style="word-break: break-word;">{{mensaje}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="WorkingKeyModal" class="modal fade" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+          <div class="modal-header">
+                <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body" id="WorKingKeyBody">
+              <div style="text-align: center;">
+                  <img src="../../../assets/img/{{img}}" />
+                  <br />
+                  <br />
+                  <img id="gifWorkinKey" src="../../../assets/img/loading.gif" /> &nbsp;&nbsp;
+                  <p style="word-break: break-word;">{{mensaje}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="EfectivoMovilModal" class="modal fade" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+                <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body" id="EfectivoMovilBody">
+              <div style="text-align: center;">
+                  <img src="../../../assets/img/{{img}}" />
+                  <br />
+                  <br />
+                  <img id="gifEfectivoMovil" src="../../../assets/img/loading.gif" /> &nbsp;&nbsp;
+                  <p style="word-break: break-word;">{{mensaje}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="PinpadModal" class="modal fade" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+                <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body" id="PinpadBody">
+              <div style="text-align: center;">
+                  <img src="../../../assets/img/{{img}}" />
+                  <br />
+                  <br />
+                  <img id="gifPinpad" src="../../../assets/img/loading.gif" /> &nbsp;&nbsp;
+                  <p style="word-break: break-word;">{{mensaje}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="GetMethodModal" class="modal fade" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+                <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body" id="GetMethodBody">
+              <div style="text-align: center;">
+                    <img src="../../../assets/img/{{img}}" />
+                    <br />
+                    <br />
+                    <img id="gifGetMethod" src="../../../assets/img/loading.gif" /> &nbsp;&nbsp;
+                    <p style="word-break: break-word;">{{mensaje}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="TestScreenModal" class="modal fade" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="GetMethodTitle">{{tittle}}</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    
+                </div>
+                <div class="modal-body" id="GetMethodBody">
+                    <div style="text-align: center;">
+                        <img src="../../../assets/img/ok.png" />
+                        <p style="word-break: break-word;">{{test}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+   <!-- jQuery -->
+   <script src="../../../assets/js/jquery.js"></script>
+
+   <!-- Bootstrap Core JavaScript -->
+   <script src="../../../assets/js/bootstrap.min.js"></script>
+
+   <!-- Date Format JavaScript Lib -->
+   <script src="../../../assets/js/date.format.js"></script>
+
+
+   <script src="../../../assets/js/javaScript.js"></script>
+
+   <!-- Custom Theme JavaScript -->
+  
+
+
